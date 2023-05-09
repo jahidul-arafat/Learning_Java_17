@@ -3,7 +3,7 @@ package org.example;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class TriangleArea {
@@ -18,12 +18,12 @@ public class TriangleArea {
         System.out.println("Enter height: ");
         height = sc.nextDouble();
 
-        // get the sanitize output from the saniztization function
-        double[] senitizedInput = sanityCheck(base,height);
+        // get the sanitize output from the sanitization function
+        double[] sanitizedInput = sanityCheck(base,height);
 
 
         // with the attributes call the areaCalculator() function
-        var area = calculateTriangleArea(senitizedInput[0], senitizedInput[1]);
+        var area = calculateTriangleArea(sanitizedInput[0], sanitizedInput[1]);
         System.out.printf("Calculated Area: %s\n",area);
     }
 
